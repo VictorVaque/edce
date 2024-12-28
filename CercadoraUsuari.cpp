@@ -26,7 +26,4 @@ PasarellaUsuari CercadoraUsuari::cercaUsuari(std::string sobrenomU) { //excepcio
     catch (const sql::SQLException& e) {
         throw std::runtime_error("Error al cercar usuari en la base de dades: " + std::string(e.what()));
     }
-    catch (const std::exception& e) {
-        throw;
-    }
 }
